@@ -24,7 +24,7 @@ public class HttpRequestUtilsTest {
 public void before() throws Exception {
     url ="https://restapi.amap.com/v3/geocode/geo";
     params = new HashMap<>();
-    params.put("key","null");
+    params.put("key","8326e8914fecc2f04b2e1db98df36b41");
     params.put("address","北京市朝阳区阜通东大街6号");
 
 } 
