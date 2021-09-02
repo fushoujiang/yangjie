@@ -39,7 +39,12 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.12.0</version>
 		</dependency>
-
+		<!-- https://mvnrepository.com/artifact/org.apache.jmeter/ApacheJMeter_java -->
+		<dependency>
+			<groupId>org.apache.jmeter</groupId>
+			<artifactId>ApacheJMeter_java</artifactId>
+			<version>5.4</version>
+		</dependency>
 		<dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
