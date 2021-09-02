@@ -5,6 +5,7 @@ import org.apache.jmeter.protocol.java.sampler.AbstractJavaSamplerClient;
 import org.apache.jmeter.protocol.java.sampler.JavaSamplerContext;
 import org.apache.jmeter.samplers.SampleResult;
 
+import java.util.HashMap;
 import java.util.Map;
 
 
@@ -37,6 +38,7 @@ public class HttpJmeterTest extends AbstractJavaSamplerClient {
 
     @Override
     public void setupTest(JavaSamplerContext context) {
+        requestParams = new HashMap<>();
         httpUrl = context.getParameter("httpUrl");
         requestParams.put("key",context.getParameter("key"));
         requestParams.put("address",context.getParameter("address"));
