@@ -8,7 +8,7 @@ public class AopService implements AopInf {
 
     @Override
     @RateLimitAnnotation(isWait = false,perSecond=1,group = "AopService.test()",failBackMethod="testFailBack")
-    public void test(){
+    public void test(String S){
         try {
             count++;
             Thread.sleep(100L);

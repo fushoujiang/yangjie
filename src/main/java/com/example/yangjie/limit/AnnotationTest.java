@@ -10,7 +10,7 @@ public class AnnotationTest {
         ac.refresh();
         AopInf bean = ac.getBean(AopInf.class);
         for (int i = 0; i < 100; i++) {
-            bean.test();
+            bean.test("FSJ"+i);
         }
         System.out.println("项目结束");
 
